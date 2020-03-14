@@ -1,0 +1,745 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .title {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+}
+.container .title .title-content {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+.container .title .title-content span:nth-child(1) {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+}
+.container .title .title-content .timebody {
+  float: right;
+  width: 250px;
+  height: 40px;
+  margin-top: 14px;
+}
+.container .title .title-content .timebody img {
+  vertical-align: middle;
+}
+.container .title .title-content .timebody .time {
+  color: #fff;
+  vertical-align: middle;
+}
+.container .student-gl-content {
+  width: 1200px;
+  height: 500px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.container .student-gl-content div {
+  width: 570px;
+  height: 220px;
+  background-color: #fff;
+}
+.container .student-gl-content div:nth-child(1) {
+  border-top-left-radius: 30px;
+}
+.container .student-gl-content div:nth-child(1) .messPic {
+  background: url(../images/pic-01.png) no-repeat;
+}
+.container .student-gl-content div:nth-child(2) {
+  border-top-right-radius: 30px;
+}
+.container .student-gl-content div:nth-child(2) .messPic {
+  background: url(../images/pic-02.png) no-repeat;
+}
+.container .student-gl-content div:nth-child(3) {
+  border-bottom-left-radius: 30px;
+}
+.container .student-gl-content div:nth-child(3) .messPic {
+  background: url(../images/pic-03.png) no-repeat;
+}
+.container .student-gl-content div:nth-child(4) {
+  border-bottom-right-radius: 30px;
+}
+.container .student-gl-content div:nth-child(4) .messPic {
+  background: url(../images/pic-04.png) no-repeat;
+}
+.container .messPic {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #222;
+  border-radius: 80px;
+  float: left;
+  margin: 30px 0;
+  margin-left: 30px;
+}
+.container .message {
+  width: 320px;
+  height: 80px;
+  display: block;
+  float: right;
+  margin: 70px 0;
+  margin-right: 30px;
+}
+.container .message p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4d4b4b;
+}
+.container .studentList {
+  width: 1200px;
+  height: 500px;
+  background-color: #fff;
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container .studentList .stuHead {
+  width: 1200px;
+  height: 40px;
+  background-color: #000;
+  overflow: hidden;
+}
+.container .studentList .stuHead .back {
+  width: 80px;
+  height: 28px;
+  background-color: #fff;
+  display: block;
+  margin: 6px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+}
+.container .studentList .stuHead .back:hover {
+  background-color: #858383;
+  color: #fff;
+}
+.container .studentList .stuHead h4 {
+  color: #fff;
+  line-height: 46px;
+  margin-left: 560px;
+}
+.container .studentList .tableMes {
+  width: 1200px;
+  height: 40px;
+  background-color: #e6e4e4;
+}
+.container .studentList .tableMes span {
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  display: block;
+  float: left;
+}
+.container .studentList .tableMes .classNum {
+  width: 150px;
+}
+.container .studentList .tableMes .name {
+  width: 100px;
+}
+.container .studentList .tableMes .gender {
+  width: 80px;
+}
+.container .studentList .tableMes .age {
+  width: 120px;
+}
+.container .studentList .tableMes .native {
+  width: 160px;
+}
+.container .studentList .tableMes .address {
+  width: 240px;
+}
+.container .studentList .tableMes .phone {
+  width: 200px;
+}
+.container .studentList .tableMes .job {
+  width: 120px;
+}
+.container .studentList .listui {
+  display: block;
+  width: 1200px;
+  height: 420px;
+  overflow-y: auto;
+}
+.container .studentList .listui li {
+  list-style: none;
+  line-height: 40px;
+}
+.container .studentList .listui li span {
+  text-align: center;
+  height: 40px;
+  float: left;
+}
+.container .studentList .listui li span:nth-child(1) {
+  display: block;
+  width: 150px;
+}
+.container .studentList .listui li span:nth-child(2) {
+  display: block;
+  width: 100px;
+}
+.container .studentList .listui li span:nth-child(3) {
+  display: block;
+  width: 80px;
+}
+.container .studentList .listui li span:nth-child(4) {
+  display: block;
+  width: 120px;
+}
+.container .studentList .listui li span:nth-child(5) {
+  display: block;
+  width: 160px;
+}
+.container .studentList .listui li span:nth-child(6) {
+  display: block;
+  width: 240px;
+}
+.container .studentList .listui li span:nth-child(7) {
+  display: block;
+  width: 200px;
+}
+.container .studentList .listui li span:nth-child(8) {
+  display: block;
+  width: 120px;
+}
+.container .editStudent {
+  width: 1200px;
+  height: 500px;
+  background-color: #fff;
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container .editStudent .editHead {
+  width: 1200px;
+  height: 40px;
+  background-color: #000;
+  overflow: hidden;
+}
+.container .editStudent .editHead .back {
+  width: 80px;
+  height: 28px;
+  background-color: #fff;
+  display: block;
+  margin: 6px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+}
+.container .editStudent .editHead .back:hover {
+  background-color: #858383;
+  color: #fff;
+}
+.container .editStudent .editHead h4 {
+  color: #fff;
+  line-height: 46px;
+  margin-left: 460px;
+  float: left;
+}
+.container .editStudent .editHead .addNew {
+  width: 80px;
+  height: 28px;
+  background-color: #fff;
+  display: block;
+  margin: 6px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+}
+.container .editStudent .edittableMes {
+  width: 1200px;
+  height: 40px;
+  background-color: #e6e4e4;
+}
+.container .editStudent .edittableMes span {
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  display: block;
+  float: left;
+}
+.container .editStudent .edittableMes .classNum {
+  width: 140px;
+}
+.container .editStudent .edittableMes .name {
+  width: 90px;
+}
+.container .editStudent .edittableMes .gender {
+  width: 70px;
+}
+.container .editStudent .edittableMes .age {
+  width: 110px;
+}
+.container .editStudent .edittableMes .native {
+  width: 150px;
+}
+.container .editStudent .edittableMes .address {
+  width: 220px;
+}
+.container .editStudent .edittableMes .phone {
+  width: 180px;
+}
+.container .editStudent .edittableMes .job {
+  width: 110px;
+}
+.container .editStudent .edittableMes .edit {
+  width: 100px;
+}
+.container .editStudent .editui {
+  display: block;
+  width: 1200px;
+  height: 420px;
+  overflow-y: auto;
+}
+.container .editStudent .editui li {
+  list-style: none;
+  line-height: 40px;
+}
+.container .editStudent .editui li span {
+  text-align: center;
+  height: 40px;
+  float: left;
+}
+.container .editStudent .editui li span:nth-child(1) {
+  display: block;
+  width: 140px;
+}
+.container .editStudent .editui li span:nth-child(2) {
+  display: block;
+  width: 90px;
+}
+.container .editStudent .editui li span:nth-child(3) {
+  display: block;
+  width: 70px;
+}
+.container .editStudent .editui li span:nth-child(4) {
+  display: block;
+  width: 110px;
+}
+.container .editStudent .editui li span:nth-child(5) {
+  display: block;
+  width: 150px;
+}
+.container .editStudent .editui li span:nth-child(6) {
+  display: block;
+  width: 220px;
+}
+.container .editStudent .editui li span:nth-child(7) {
+  display: block;
+  width: 180px;
+}
+.container .editStudent .editui li span:nth-child(8) {
+  display: block;
+  width: 110px;
+}
+.container .editStudent .editui li span:nth-child(9) {
+  display: block;
+  width: 100px;
+}
+.container .editStudent .editui li span:nth-child(9) a:nth-child(1) {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: #63a4e0;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.container .editStudent .editui li span:nth-child(9) a:nth-child(2) {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: #e06363;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.container .addNewsbox {
+  width: 700px;
+  height: 520px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10;
+}
+.container .addNewsbox .addTitle {
+  width: 700px;
+  height: 40px;
+  background-color: #000;
+}
+.container .addNewsbox .addTitle p {
+  display: block;
+  width: 660px;
+  height: 40px;
+  float: left;
+  color: #fff;
+  padding-left: 300px;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+.container .addNewsbox .addTitle .closeAdd {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #858383;
+  color: #fff;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.container .addNewsbox .addContent {
+  width: 700px;
+  height: 420px;
+}
+.container .addNewsbox .addContent ul {
+  padding: 40px;
+}
+.container .addNewsbox .addContent ul li {
+  list-style: none;
+  display: block;
+  width: 700px;
+  height: 40px;
+}
+.container .addNewsbox .addContent ul li span {
+  display: block;
+  width: 120px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+}
+.container .addNewsbox .addContent ul li input {
+  float: left;
+  width: 440px;
+  height: 26px;
+  outline-style: none;
+}
+.container .addNewsbox .addSave {
+  width: 200px;
+  height: 40px;
+  display: block;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.container .editNewsbox {
+  width: 700px;
+  height: 520px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10;
+}
+.container .editNewsbox .editTitle {
+  width: 700px;
+  height: 40px;
+  background-color: #000;
+}
+.container .editNewsbox .editTitle p {
+  display: block;
+  width: 660px;
+  height: 40px;
+  float: left;
+  color: #fff;
+  padding-left: 300px;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+.container .editNewsbox .editTitle .closeEdit {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #858383;
+  color: #fff;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.container .editNewsbox .editContent {
+  width: 700px;
+  height: 420px;
+}
+.container .editNewsbox .editContent ul {
+  padding: 40px;
+}
+.container .editNewsbox .editContent ul li {
+  list-style: none;
+  display: block;
+  width: 700px;
+  height: 40px;
+}
+.container .editNewsbox .editContent ul li span {
+  display: block;
+  width: 120px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+}
+.container .editNewsbox .editContent ul li input {
+  float: left;
+  width: 440px;
+  height: 26px;
+  outline-style: none;
+}
+.container .editNewsbox .editSave {
+  width: 200px;
+  height: 40px;
+  display: block;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.container .zzc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 9;
+}
+.container .doList {
+  width: 1200px;
+  height: 500px;
+  background-color: #fff;
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container .doList .doHead {
+  width: 1200px;
+  height: 40px;
+  background-color: #000;
+  overflow: hidden;
+}
+.container .doList .doHead .back {
+  width: 80px;
+  height: 28px;
+  background-color: #fff;
+  display: block;
+  margin: 6px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+}
+.container .doList .doHead .back:hover {
+  background-color: #858383;
+  color: #fff;
+}
+.container .doList .doHead h4 {
+  color: #fff;
+  line-height: 46px;
+  margin-left: 460px;
+  float: left;
+}
+.container .doList .doContent {
+  width: 1200px;
+  height: 460px;
+}
+.container .doList .doContent .todo {
+  width: 280px;
+  height: 460px;
+  background-color: #808080;
+  float: left;
+  overflow: hidden;
+}
+.container .doList .doContent .todo #todoTitle {
+  display: block;
+  width: 240px;
+  height: 40px;
+  margin: 20px 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+.container .doList .doContent .todo #todoContent {
+  width: 240px;
+  height: 280px;
+  margin: 10px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+}
+.container .doList .doContent .todo #todoSave {
+  display: block;
+  width: 240px;
+  height: 36px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 36px;
+  margin: 10px auto;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.container .doList .doContent .todo #todoSave:hover {
+  background-color: #5a5a5a;
+  color: #fff;
+}
+.container .doList .doContent .doui {
+  width: 920px;
+  height: 460px;
+  box-sizing: border-box;
+  float: right;
+  overflow-y: auto;
+}
+.container .doList .doContent .doui li {
+  display: block;
+  width: 900px;
+  height: auto;
+  border-bottom: 1px dashed #222;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.container .doList .doContent .doui li span {
+  display: block;
+}
+.container .doList .doContent .doui li span:nth-child(1) {
+  font-size: 20px;
+}
+.container .doList .doContent .doui li span:nth-child(2) {
+  color: #535353;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .doList .doContent .doui li span:nth-child(3) {
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: right;
+}
+.container .doList .doContent .doui li span:nth-child(3) a {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.container .doList .doContent .doui li span:nth-child(3) a:hover {
+  background-color: #6e6d6d;
+}
+.container .setting {
+  width: 1200px;
+  height: 500px;
+  background-color: #fff;
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container .setting .setHead {
+  width: 1200px;
+  height: 40px;
+  background-color: #000;
+  overflow: hidden;
+}
+.container .setting .setHead .back {
+  width: 80px;
+  height: 28px;
+  background-color: #fff;
+  display: block;
+  margin: 6px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+}
+.container .setting .setHead .back:hover {
+  background-color: #858383;
+  color: #fff;
+}
+.container .setting .setHead h4 {
+  color: #fff;
+  line-height: 46px;
+  margin-left: 460px;
+  float: left;
+}
+.container .setting .setContent {
+  width: 1200px;
+  height: 460px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.container .setting .setContent span {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .setting .setContent span:nth-child(1) {
+  margin: 130px 0;
+  background-color: #63a4e0;
+}
+.container .setting .setContent span:nth-child(1):hover {
+  background-color: #8abeee;
+}
+.container .setting .setContent span:nth-child(2) {
+  margin: 130px 0;
+  background-color: #e06363;
+}
+.container .setting .setContent span:nth-child(2):hover {
+  background-color: #eb8c8c;
+}

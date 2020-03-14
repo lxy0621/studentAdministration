@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 信息弹出框 -->
+        <div class="addNewsbox">
+            <div class="addTitle">
+                <p>请输入学生信息</p>
+                <span class="closeAdd">X</span>
+            </div>
+            <div class="addContent">
+                <ul>
+                    <li><span>*学号：</span> <input id="classNumber" type="text" value="" placeholder="请输入学生学号"></li>
+                    <li><span>*姓名：</span> <input id="name" type="text" placeholder="请输入学生姓名"></li>
+                    <li><span>&nbsp性别：</span> <input id="gender" type="text" placeholder="请输入学生性别"></li>
+                    <li><span>&nbsp年龄：</span> <input id="age" type="text" placeholder="请输入学生年龄"></li>
+                    <li><span>&nbsp籍贯：</span> <input id="native" type="text" placeholder="请输入学生籍贯"></li>
+                    <li><span>&nbsp地址：</span> <input id="address" type="text" placeholder="请输入学生地址"></li>
+                    <li><span>&nbsp手机号码：</span> <input id="phone" type="text" placeholder="请输入学生手机号码"></li>
+                    <li><span>&nbsp工作：</span> <input id="job" type="text" placeholder="请输入学生工作"></li>
+                </ul>
+            </div>
+            <span class="addSave">保存</span>
+        </div>
+        <!-- 编辑弹出框 -->
+        <div class="editNewsbox">
+            <div class="editTitle">
+                <p>编辑学生信息</p>
+                <span class="closeEdit">X</span>
+            </div>
+            <div class="editContent">
+                <ul>
+                    <li><span>*学号：</span> <input class="classNumber" type="text" value="" placeholder="请输入学生学号"></li>
+                    <li><span>*姓名：</span> <input class="name" type="text" placeholder="请输入学生姓名"></li>
+                    <li><span>&nbsp性别：</span> <input class="gender" type="text" placeholder="请输入学生性别"></li>
+                    <li><span>&nbsp年龄：</span> <input class="age" type="text" placeholder="请输入学生年龄"></li>
+                    <li><span>&nbsp籍贯：</span> <input class="native" type="text" placeholder="请输入学生籍贯"></li>
+                    <li><span>&nbsp地址：</span> <input class="address" type="text" placeholder="请输入学生地址"></li>
+                    <li><span>&nbsp手机号码：</span> <input class="phone" type="text" placeholder="请输入学生手机号码"></li>
+                    <li><span>&nbsp工作：</span> <input class="job" type="text" placeholder="请输入学生工作"></li>
+                </ul>
+            </div>
+            <span class="editSave">保存修改</span>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="zzc"></div>
+        <!-- 页面头部 -->
+        <div class="title">
+            <div class="title-content">
+                <span>Welcome To LXY 学生成绩管理系统</span>
+                <div class="timebody">
+                    <img src="./images/time.png" alt="">
+                    <span class="time"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 首页菜单 -->
+        <div class="student-gl-content">
+            <div class="studentMessage">
+                <span class="messPic"><img src="" alt=""></span>
+                <span class="message">
+                    <h3>学生信息列表</h3>
+                    <p>查询当前所有学生信息</p>
+                </span>
+            </div>
+            <div class="editStudentMessage">
+                <span class="messPic"><img src="" alt=""></span>
+                <span class="message">
+                    <h3>编辑学生信息</h3>
+                    <p>编辑当前所有学生信息</p>
+                </span>
+            </div>
+            <div class="doListMessage">
+                <span class="messPic"><img src="" alt=""></span>
+                <span class="message">
+                    <h3>备忘录</h3>
+                    <p>记录您的工作日志与完成情况</p>
+                </span>
+            </div>
+            <div class="settingMessage">
+                <span class="messPic"><img src="" alt=""></span>
+                <span class="message">
+                    <h3>系统设置</h3>
+                    <p>设置当前系统</p>
+                </span>
+            </div>
+        </div>
+        <!-- 单页面跳转跳转 -->
+        <!-- 学生信息列表 -->
+        <div class="studentList">
+            <div class="stuHead">
+                <span class="back">返回</span>
+                <h4>学生信息列表</h4>
+            </div>
+            <div class="tableMes">
+                <span class="classNum">学号</span>
+                <span class="name">姓名</span>
+                <span class="gender">性别</span>
+                <span class="age">年龄</span>
+                <span class="native">籍贯</span>
+                <span class="address">地址</span>
+                <span class="phone">手机号码</span>
+                <span class="job">工作</span>
+            </div>
+            <!-- data -->
+            <ul class="listui"></ul>
+        </div>
+        <!-- 编辑学生信息 -->
+        <div class="editStudent">
+            <div class="editHead">
+                <span class="back">返回</span>
+                <h4>编辑学生信息</h4>
+                <span class="addNew">新增学生</span>
+            </div>
+            <div class="edittableMes">
+                <span class="classNum">学号</span>
+                <span class="name">姓名</span>
+                <span class="gender">性别</span>
+                <span class="age">年龄</span>
+                <span class="native">籍贯</span>
+                <span class="address">地址</span>
+                <span class="phone">手机号码</span>
+                <span class="job">工作</span>
+                <span class="edit">编辑</span>
+            </div>
+            <ul class="editui">
+                <!-- <li>
+                    <span>201358244025</span>
+                    <span>李熙胤</span>
+                    <span>男</span>
+                    <span>26</span>
+                    <span>山西大同</span>
+                    <span>内蒙古乌兰察布市集宁区</span>
+                    <span>18883774247</span>
+                    <span>个体老板</span>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 备忘录 -->
+        <div class="doList">
+            <div class="doHead">
+                <span class="back">返回</span>
+                <h4>备忘录</h4>
+            </div>
+            <div class="doContent">
+                <div class="todo">
+                    <input id="todoTitle" type="text" placeholder="请输入标题">
+                    <textarea name="" id="todoContent" placeholder="请输入内容"></textarea>
+                    <span id="todoSave">保存备忘录</span>
+                </div>
+                <ul class="doui"></ul>
+            </div>
+        </div>
+        <!-- 系统设置 -->
+        <div class="setting">
+            <div class="setHead">
+                <span class="back">返回</span>
+                <h4>系统设置</h4>
+            </div>
+
+            <div class="setContent">
+                <span class="deleteStuMessage">清空学生信息</span>
+                <span class="deletedoListMessage">清空备忘录信息</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
