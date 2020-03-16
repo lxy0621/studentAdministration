@@ -205,7 +205,7 @@ $(function () {
 
         } else {
             data = JSON.parse(data);
-            data.push(
+            data.unshift(
                 {
                     todoTitle: todoTitle,
                     todoContent: todoContent,
